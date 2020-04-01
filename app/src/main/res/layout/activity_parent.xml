@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040404"
+    tools:context=".Parent">
+
+    <ImageView
+        android:id="@+id/checkEasy2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/easyLevel2"
+        app:layout_constraintTop_toBottomOf="@+id/checkEasy1"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/checkEasy3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/easyLevel3"
+        app:layout_constraintTop_toBottomOf="@+id/checkEasy2"
+        app:srcCompat="@drawable/check" />
+
+    <TextView
+        android:id="@+id/childStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Child Stats"
+        android:textColor="#FFEB3B"
+        android:textSize="36sp"
+        app:fontFamily="@font/carter_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/easyLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="80dp"
+        android:text="Easy Level 1"
+        android:textColor="#FDFBFB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/childStats" />
+
+    <TextView
+        android:id="@+id/easyLevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:text="Easy Level 2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easyLevel1" />
+
+    <TextView
+        android:id="@+id/easyLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="44dp"
+        android:text="Easy Level 3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easyLevel2" />
+
+    <TextView
+        android:id="@+id/hardLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="80dp"
+        android:text="Hard Level 1"
+        android:textColor="#FDFBFB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/checkEasy1"
+        app:layout_constraintTop_toBottomOf="@+id/childStats" />
+
+    <TextView
+        android:id="@+id/hardLevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:text="Hard Level 2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/checkEasy2"
+        app:layout_constraintTop_toBottomOf="@+id/hardLevel1" />
+
+    <TextView
+        android:id="@+id/hardLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:text="Hard Level 3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toEndOf="@+id/checkEasy3"
+        app:layout_constraintTop_toBottomOf="@+id/hardLevel2" />
+
+    <ImageView
+        android:id="@+id/checkEasy1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="72dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/easyLevel1"
+        app:layout_constraintTop_toBottomOf="@+id/childStats"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/checkHard1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="72dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/hardLevel1"
+        app:layout_constraintTop_toBottomOf="@+id/childStats"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/checkHard2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/hardLevel2"
+        app:layout_constraintTop_toBottomOf="@+id/checkHard1"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/checkHard3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/hardLevel3"
+        app:layout_constraintTop_toBottomOf="@+id/checkHard2"
+        app:srcCompat="@drawable/check" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:background="#9C27B0"
+        android:text="Exit"
+        android:onClick="exitApp"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hardLevel3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

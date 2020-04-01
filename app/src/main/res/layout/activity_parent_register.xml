@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0A0909"
+        tools:context=".RegisterActivity">
+
+        <EditText
+            android:id="@+id/eTPWD"
+            android:layout_width="306dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:textColor="#FAFAFA"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+        <TextView
+            android:id="@+id/tVPWD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="password"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/eTPWD"
+            app:layout_constraintHorizontal_bias="0.012"
+            app:layout_constraintStart_toStartOf="@+id/eTPWD"
+            app:layout_constraintTop_toTopOf="@+id/eTPWD" />
+
+        <TextView
+            android:id="@+id/tVFN2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="first name"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/eTFN"
+            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintStart_toStartOf="@+id/eTFN"
+            app:layout_constraintTop_toTopOf="@+id/eTFN" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kody" />
+
+        <Button
+            android:id="@+id/rButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:background="#3F51B5"
+            android:onClick="backToLogin"
+            android:text="Register"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eTChildEmail" />
+
+        <EditText
+            android:id="@+id/eTEmail"
+            android:layout_width="306dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textColor="#FAFAFA"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eTLN" />
+
+        <EditText
+            android:id="@+id/eTChildEmail"
+            android:layout_width="306dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textColor="#FAFAFA"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eTPWD" />
+
+        <TextView
+            android:id="@+id/tVEA2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="child's email address"
+            android:textColor="#F7F9F5"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/eTChildEmail"
+            app:layout_constraintHorizontal_bias="0.013"
+            app:layout_constraintStart_toStartOf="@+id/eTChildEmail"
+            app:layout_constraintTop_toTopOf="@+id/eTChildEmail" />
+
+        <EditText
+            android:id="@+id/eTFN"
+            android:layout_width="306dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColor="#FAFAFA"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <EditText
+            android:id="@+id/eTLN"
+            android:layout_width="306sp"
+            android:layout_height="71sp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="#FAFAFA"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eTFN" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="306dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:editable="false"
+            android:gravity="center"
+            android:textColor="#FAFAFA"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eTEmail" />
+
+        <TextView
+            android:id="@+id/tVFN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="first name"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/eTFN"
+            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintStart_toStartOf="@+id/eTFN"
+            app:layout_constraintTop_toTopOf="@+id/eTFN" />
+
+        <TextView
+            android:id="@+id/tVLN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="last name"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/eTLN"
+            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintStart_toStartOf="@+id/eTLN"
+            app:layout_constraintTop_toTopOf="@+id/eTLN" />
+
+        <TextView
+            android:id="@+id/tVEA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="email address"
+            android:textColor="#8BC34A"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/eTEmail"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="@+id/eTEmail"
+            app:layout_constraintTop_toTopOf="@+id/eTEmail" />
+
+        <TextView
+            android:id="@+id/tVDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date of birth"
+            android:textColor="#C139DA"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvDate"
+            app:layout_constraintHorizontal_bias="0.017"
+            app:layout_constraintStart_toStartOf="@+id/tvDate"
+            app:layout_constraintTop_toTopOf="@+id/tvDate" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
